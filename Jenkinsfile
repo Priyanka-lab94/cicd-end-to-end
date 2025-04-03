@@ -20,7 +20,7 @@ pipeline {
             steps{
                 script{
                     sh '''
-                    echo 'Buid Docker Image'
+                    echo 'Build Docker Image'
                     docker build -t priyalog/todo:${BUILD_NUMBER} .
                     '''
                 }
